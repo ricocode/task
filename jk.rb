@@ -58,12 +58,12 @@ class Janken
     if result == 0
       puts "『あいこで』"  
       return janken.pon(player.player_hand(),enemy.enemy_hand())
-    elsif  result == 1
+    elsif  result == 2
       puts "player win"
-#     return 1
-    else #result == 2
-      puts "player lose"
 #     return 2
+    else #result == 1
+      puts "player lose"
+#     return 1
     end
   end
 end
@@ -72,5 +72,4 @@ player = Player.new
 enemy = Enemy.new
 janken = Janken.new
 
-
-janken.pon(player.player_hand(),enemy.enemy_hand())
+janken.pon(player.player_hand,enemy.enemy_hand)
