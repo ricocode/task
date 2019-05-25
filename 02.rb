@@ -27,13 +27,18 @@ class Player
     end
   end
   
-  def re_entry(player_hand)
-    puts player_hand
-    if player_hand == 3
-    player.player_hand
-    end 
+  def re_entry(hand)
+    if @hand == 3
+      return true
+    end
+      entry = true
+    while entry
+      entry = player.player_hand
+    end
   end  
 end #class
 
 player = Player.new
 player.player_hand
+
+return player_hand
