@@ -51,7 +51,7 @@ class Janken
     end
 
     result = (player_hand - enemy_hand + 3) % 3
-    puts "（計算結果　#{result})"
+    # puts "（計算結果　#{result})"
     if result == 0
       puts "『あいこで』\n\n"  
       pon(Player.new.player_hand, Enemy.new.enemy_hand)
