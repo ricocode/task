@@ -11,8 +11,8 @@ class Player
 
     @hand = gets.chomp
     if @hand == "0"|| @hand == "1" || @hand == "2"
-      hand = gets.to_i
-      return hand
+      return hand.to_i
+      
     else
       puts "0,1,2以外できません。再入力してください"
       Player.new.player_hand
