@@ -38,7 +38,7 @@ class Janken
       puts "player;グー"
     elsif player_hand == 1
       puts "player;チョキ"
-    elsif hand == 2
+    else #hand == 2
       puts "player;パー"
     end
 
